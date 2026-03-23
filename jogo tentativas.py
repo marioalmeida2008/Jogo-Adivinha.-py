@@ -1,21 +1,21 @@
 import random
 
 numero_secreto = random.randint(0, 10)
-tentativas = 4
+tentativas = 1
 
-print("Jogo de Adivinha, diga qual número eu penso!")
+print("Queres te tornar o novo Rei? então diga qual número eu penso!")
 
 while True:
-    chute = int(input("Seu número: "))
+    chute = int(input("Qual é o número?  "))
     
     tentativas = tentativas + 1
 
     if chute == numero_secreto:
-        print("🎉 Parabéns! Você acertou! Agora és Sigma")
+        print("🎉 Parabéns! Você acertou! Agora és o REI!")
         print("Tentativas:", tentativas)
         break   
     elif chute > numero_secreto:
-        print("Errou beta. ⬇️ Muito alto!")
+        print("Errou fraco, quase lá. ⬇️ Muito alto!")
     else:
-        print("Foi longe seu beta. ⬆️ Muito baixo!")
+        print("Foi longe fraco, quase lá . ⬆️ Muito baixo!")
         
